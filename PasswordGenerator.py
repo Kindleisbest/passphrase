@@ -9,7 +9,7 @@ def generate():
         output.delete("1.0", tk.END)
 
         for _ in range(number_of_passwords):
-            password_length = random.randint(8, 16)
+            password_length = random.randint(14, 24)
             password = "".join(random.choice(characters) for _ in range(password_length))
             output.insert(tk.END, password + "\n")
 
